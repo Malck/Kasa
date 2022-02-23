@@ -1,0 +1,57 @@
+*{
+    font-family: "Montserrat", sans-serif;
+    outline:none;
+    list-style-type: none;
+    text-decoration: none;
+    padding:0;
+    margin:0;
+}
+body{    
+    margin: 0px 80px;  
+}
+
+/* suite */ 
+
+ul {
+    display: flex;
+    /* justify-content: unset; */
+    width: 500px;
+}
+nav.navbar {
+    display: flex;
+    align-content: column;
+    align-items: column;
+    flex-direction: row;
+}
+li {
+    width: 50%;
+    font-size: 24px;
+}
+li a{
+    color:#FF6060;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+    align-items: center;
+}
+.banner{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4vw;
+}
+.banner-image{
+    border-radius: 25px;
+    filter: brightness(60%);
+}
+.slogan{
+    position:absolute;
+    color: white;
+    font-weight: 500;
+    font-family: Montserrat;
+}

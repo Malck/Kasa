@@ -1,0 +1,37 @@
+.error-page{
+    color:#FF6060;
+    position: relative;
+    /*width: 1440px;*/
+    height: 1024px;
+}
+
+.number-of-error{
+    display: flex;
+    font-size: 288px;
+    justify-content: center;
+    margin-top: 150px ;
+    margin-bottom: 60px;
+}
+
+
+.error-message{
+    display: block;
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+        font-weight: 500;
+        font-size: 36px;
+}
+.return{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    font-size: 500;
+    font-size: 18px;
+    margin-top: 180px;
+    margin-bottom: 100px;
+    text-decoration: underline;
+    color: #FF6060;
+
+}

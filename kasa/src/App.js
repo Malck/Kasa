@@ -1,12 +1,12 @@
-import React from 'react'
 //import ReactDOM from 'react-dom'
+import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Error from "../src/pages/Error.jsx"
-
-import Header from './components/Header'
 import About from './pages/About'
 
+import Header from './components/Header'
+import Footer from "./components/Footer"
 //import "../src/styles/index.css"
 
 function App() {
@@ -20,10 +20,11 @@ function App() {
 
         <Route path="/About" element={<About />}/>
 
-        <Route path="/Error" element={<Error />}/>
-        
-            
+        <Route path="/*" element={<Error />}/>
+          
       </Routes>
+
+      <Footer />
     </Router>
   );
 }

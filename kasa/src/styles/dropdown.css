@@ -1,0 +1,25 @@
+.ouvert{
+    width: 20px;
+    height: 20px;
+}
+.fermer{
+    width: 20px;
+    height: 20px;
+}
+.apropos {
+    display: flex;
+    justify-content: space-around;
+}
+.apropos2 {
+    display: flex;
+    justify-content: space-around;
+}
+.details {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin-bottom: 4vw;
+    flex-direction: column;
+    height: 310px;
+}

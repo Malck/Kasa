@@ -4,6 +4,7 @@ import "../styles/home.css"
 
 function Home() {
     return ( 
+
        <div className="home-page">
          
           <div className="banner"> 
@@ -18,8 +19,7 @@ function Home() {
           </div>
 
         </div>
-       
-      
+           
     );
   }
   

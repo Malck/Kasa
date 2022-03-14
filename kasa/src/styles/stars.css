@@ -1,0 +1,25 @@
+.starsolid{
+    width: 20px;
+    height: 20px;
+    color: #FF6060;
+}
+.starsempty{
+    width: 20px;
+    height: 20px;
+}
+
+.stars-content {
+    display: flex;
+    justify-content: end;
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .stars-content {
+        margin-top: 24px;
+    }
+    .stars-content img {
+        width: 30px;
+        height: 30px;
+    }
+}

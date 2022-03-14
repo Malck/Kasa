@@ -1,0 +1,84 @@
+main.container-locations {
+    margin: 30px 80px;
+    color:#FF6060;
+}
+
+.ensemble {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tags {
+    display: flex;
+    gap: 10px;
+    margin: 30px 0;
+}
+
+.tag {
+    color: white;
+    background-color: #FF6060;
+    border: solid #FF6060;
+    border-radius: 10px;
+    padding: 2px 14px;
+}
+
+section.details-container {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+.details-container .apropos{
+    display: block;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.container-locations .dropHead{
+    max-width: 580px;
+}
+.container-locations .dropText{
+    max-width: 580px;
+}
+
+@media only screen and (max-width: 1400px) {
+
+    .container-locations .dropHead {
+        max-width: 450px;
+    }
+    .container-locations .dropText {
+        max-width: 450px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+
+    .container-locations .dropHead {
+        max-width: 350px;
+    }
+    .container-locations .dropText {
+        max-width: 350px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    .container-locations .dropHead {
+        max-width: 200px;
+    }
+    .container-locations .dropText {
+        max-width: 200px;
+    }
+}
+@media only screen and (max-width: 600px) {
+
+    .container-locations .dropHead {
+        max-width: 150px;
+    }
+    .container-locations .dropText {
+        max-width: 150px;
+    }
+}
+

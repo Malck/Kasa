@@ -1,6 +1,9 @@
+import data from "../data"
 import Falaise from "../assets/Falaise.png"
-//import Header from "../components/Header"
+import Card from "../components/Cards"
+
 import "../styles/home.css"
+import "../styles/card.css"
 
 function Home() {
     return ( 
@@ -12,9 +15,13 @@ function Home() {
             <h1 className="slogan">Chez vous, partout et ailleurs</h1>
           </div>
 
-          <div className="card">
+          <div className="cardall-page">
 
-              les differents hotel ici
+          {data.map((elt) => (
+                        <div key={elt.id} className='location'>
+                            <Card title={elt.title} cover={elt.cover} id={elt.id} />
+                        </div>
+                    ))}
 
           </div>
 

@@ -27,6 +27,11 @@ nav.navbar {
 li {
     width: 50%;
     font-size: 24px;
+    justify-content: flex-end;
+    display: flex;
+}
+li a:hover{
+    text-decoration: underline #FF6060;
 }
 li a{
     color:#FF6060;
@@ -38,20 +43,57 @@ li a{
     margin: 30px 80px;
     align-items: center;
 }
-.banner{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 4vw;
-}
-.banner-image{
-    border-radius: 25px;
-    filter: brightness(60%);
-}
+
 .slogan{
     position:absolute;
     color: white;
     font-weight: 500;
     font-family: Montserrat;
+}
+@media only screen and (max-width: 950px) {
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        gap: 25px;
+    }
+    li{
+        font-size: 22px;
+        width: unset;
+    }
+    .logo{
+        height: 50px;
+    }
+    nav.navbar {
+       display: flex;
+       width: 210px;
+    }
+    .slogan{
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        gap: 25px;
+    }
+    li{
+        font-size: 16px;
+    }
+    .logo{
+        height: 30px;
+    }
+    nav.navbar {
+       display: flex;
+       width: 210px;
+    }
+    .slogan{
+        font-size: 18px;
+    }
+    .header{
+        margin: 30px 10px;
+    }
 }

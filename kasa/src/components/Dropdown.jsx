@@ -12,15 +12,23 @@ function Dropdown({title, content}) {
     
     return  (
         <div className="apropos"> 
+
+
+          <div className='dropHead'>
             <h1>{title}</h1> 
+
             <span 
             className='chevronDown'
             onClick={() => setIsClose(!isClose)}>
+
                {isClose ? <img className='fermer' src={chevrondown} alt="chevron"/> : <img className='ouvert' src={chevronup} alt="chevron"/> } 
+               
             </span>
+          </div>
+
 
           {!isClose && <div className='textpropos'>
-              <p>{content}</p>
+              <p className='dropText'>{content}</p>
           </div>}
 
         </div>

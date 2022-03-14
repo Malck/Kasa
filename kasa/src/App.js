@@ -9,6 +9,9 @@ import Header from './components/Header'
 import Footer from "./components/Footer"
 //import "../src/styles/index.css"
 
+//import Locations from "../src/pages/LocationTest"
+import LocationPage from "../src/pages/Location"
+
 function App() {
   return (
     <Router>
@@ -20,6 +23,9 @@ function App() {
 
         <Route path="/About" element={<About />}/>
 
+        <Route  path='/locations/:id' element={<LocationPage />}/>
+        
+
         <Route path="/*" element={<Error />}/>
           
       </Routes>
@@ -28,7 +34,8 @@ function App() {
     </Router>
   );
 }
-
+//<Route  path='/locations/:id' element={<Locations />}/>
 export default App;
 
 //<Route element={<Error />}/>
+//<Route path="/Location" element={<Locations />}/> 

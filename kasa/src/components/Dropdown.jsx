@@ -5,10 +5,11 @@ import "../styles/dropdown.css"
 import chevrondown from "../assets/chevrondown.svg"
 import chevronup from "../assets/chevronup.svg"
 
-//import aboutDatas from "../aboutText" , pas besoin on fait passer title et content du parent about.jsx a Dropdown.jsx dans sa function Dropdown
 
 function Dropdown({title, content}) {
     const [isClose, setIsClose] = useState(true)
+
+    console.log(Array.isArray(content))
     
     return  (
         <div className="apropos"> 
@@ -28,7 +29,13 @@ function Dropdown({title, content}) {
 
 
           {!isClose && <div className='textpropos'>
-              <p className='dropText'>{content}</p>
+
+            {Array.isArray(content) ? 
+               <ul className='dropText'>  {content.map(item => <li className='litext'>{item}</li> ) }   </ul>
+               :
+               <p className='dropText'>{content}</p>
+            }
+              
           </div>}
 
         </div>

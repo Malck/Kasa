@@ -1,7 +1,6 @@
 .error-page{
     color:#FF6060;
     position: relative;
-    /*width: 1440px;*/
     height: 1024px;
 }
 
@@ -27,11 +26,49 @@
     justify-content: center;
     text-align: center;
     cursor: pointer;
-    font-size: 500;
+    font-weight: 500;
     font-size: 18px;
     margin-top: 180px;
     margin-bottom: 100px;
     text-decoration: underline;
     color: #FF6060;
+
+}
+
+
+@media only screen and (max-width: 900px) {
+    .number-of-error {
+        font-size: 200px;  
+    }
+    .error-message {
+        font-size: 28px;
+    }
+    .error-page {
+        height: 800px;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .number-of-error {
+        font-size: 100px;  
+    }
+    .error-message {
+        font-size: 16px;
+    }
+    .logo {
+        
+        padding-right: 0px; 
+        padding-left: 15px;
+    }
+    .error-page {
+        
+        height: 600px;
+    }
+    .return {
+        
+        font-size: 15px;
+        
+    }
 
 }

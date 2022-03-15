@@ -78,10 +78,10 @@ span.chevronDown {
 @media only screen and (max-width: 600px) {
 
     .details .dropHead{
-        width: 300px;
+        width: 290px;
     }
     .details .dropText{
-        width: 300px;
+        width: 290px;
         font-size: 15px;
     }
     .dropHead h1{

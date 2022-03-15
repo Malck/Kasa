@@ -9,7 +9,7 @@ export default function Carrousel(props) {
 
     const prevPicture = () => {
         setCurrentSlide(currentSlide = currentSlide - 1)
-        console.log(currentSlide);
+        
         
         if (currentSlide < 0) {
             setCurrentSlide(props.img.length - 1)

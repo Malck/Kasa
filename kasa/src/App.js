@@ -1,4 +1,3 @@
-//import ReactDOM from 'react-dom'
 import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
@@ -7,9 +6,8 @@ import About from './pages/About'
 
 import Header from './components/Header'
 import Footer from "./components/Footer"
-//import "../src/styles/index.css"
+import "../src/styles/index.css"
 
-//import Locations from "../src/pages/LocationTest"
 import LocationPage from "../src/pages/Location"
 
 function App() {
@@ -34,8 +32,7 @@ function App() {
     </Router>
   );
 }
-//<Route  path='/locations/:id' element={<Locations />}/>
+
 export default App;
 
-//<Route element={<Error />}/>
-//<Route path="/Location" element={<Locations />}/> 
+

@@ -1,7 +1,7 @@
 //import { Link } from 'react-router-dom'
+//import MontagnesR from "../assets/MontagnesResp.png"
 import "../styles/about.css"
 import Montagnes from "../assets/Montagnes.png"
-import MontagnesR from "../assets/MontagnesResp.png"
 import aboutDatas from "../aboutText.js"
 import Dropdown from "../components/Dropdown"
 

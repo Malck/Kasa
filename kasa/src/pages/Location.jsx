@@ -11,7 +11,7 @@ import Stars from "../components/Stars"
 
 import '../styles/location.css'
 import "../styles/avatar.css"
-//import "../styles/dropdown.css"
+
 
 
 export default function LocationPage() {
@@ -62,7 +62,7 @@ export default function LocationPage() {
 
                 <section className='details-container'>
                     <Dropdown  title='Description' content={location.description} />
-                    <Dropdown  title='Equipements' content={location.equipments} />
+                    <Dropdown  title='Équipements' content={location.equipments} />
                 </section>
 
 

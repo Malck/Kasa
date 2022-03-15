@@ -1,5 +1,3 @@
-//import './Tags.css'
-
 export default function Tags(props) {
 
     return (
@@ -15,28 +13,3 @@ export default function Tags(props) {
 }
 
 
-/*
-
-dans Location.jsx on pourrait ecrire 
-                    <div className='tag-container'>
-                        {location.tags.map((tag, index) => (
-                            <Tags content={tag} key={index} />
-                        ))}
-                    </div>
-
-
-dans Tags.jsx on ecrirait alors 
-
-import React from 'react';
-
-function Tags({tag}) {
-    
-        
-        return (
-            <div className='tags'>{tag}
-            </div>
-        );
-}
-
-export default Tags;
-*/

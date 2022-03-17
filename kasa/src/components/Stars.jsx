@@ -8,7 +8,7 @@ export default function Stars(props) {
     return (
         <div className="stars-content">
             
-            {Array.from({length: 5 } , (v, ids) => ids < props.star ? <img key={ids} src={StarSolid} alt="star svg" className="starsolid" /> : <img key={ids} src={StarEmpty} alt="star svg" className="starsempty" />)}
+            {Array.from({length: 5 } , (item, itemKey) => itemKey < props.star ? <img key={itemKey} src={StarSolid} alt="star svg" className="starsolid" /> : <img key={itemKey} src={StarEmpty} alt="star svg" className="starsempty" />)}
         </div>
 
         

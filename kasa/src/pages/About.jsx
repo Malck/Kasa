@@ -14,12 +14,14 @@ function About() {
           <div className="banner"> 
             
           <img className='banner-image' src={Montagnes} alt='background' />
+
           </div>
 
           <div className='details'>
 
             {aboutDatas.map((elt) => (
               <Dropdown key={elt.id} title={elt.title} content={elt.content} className='dropdown-about' />))}
+              
           </div>
 
         </div>

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
-import { BrowserRouter as  Route } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 import data from "../data";
 import Dropdown from "../components/Dropdown";
@@ -20,17 +20,21 @@ export default function LocationPage() {
 
     const { id } = useParams()
 
+    let navigate = useNavigate();
+
     useEffect(() => {
 
         const article = data.filter((logement) => logement.id === id)[0]
 
+        console.log(article)
+
+        if (!article){
+            return navigate("/*");
+        }
+
         setLocation(article)  
 
-    }, [id])
-
-    if (!location) {
-        return <Route to='/' />
-    }
+    }, [id, navigate])
 
 
     return (
